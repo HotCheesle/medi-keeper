@@ -55,6 +55,16 @@
                 app:layout_constraintStart_toEndOf="@+id/search_mname"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_mname"
+                app:layout_constraintVertical_bias="0.5" />
+
 
             <!-- 내용 추가 -->
 
@@ -65,7 +75,7 @@
             android:id="@+id/navigation_drawer"
             android:layout_width="240dp"
             android:layout_height="match_parent"
-            android:layout_gravity="start"
+            android:layout_gravity="left"
             android:orientation="vertical">
 
             <!-- 네비게이션 드로어 내용 추가 -->

@@ -6,4 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#85C849"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="83dp">
+
+        <!-- 메인 콘텐츠 -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/emaillogin"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:hint="이메일을 입력하세요."
+                android:textSize="8pt"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/pwlogin"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="비밀번호를 입력하세요."
+                android:inputType="textPassword"
+                android:textSize="8pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emaillogin"></EditText>
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="50dp"
+                android:background="#84C849"
+                android:text="로그인"
+                android:textColor="#FFFFFF"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pwlogin" />
+
+
+            <!-- 내용 추가 -->
+
+        </android.support.constraint.ConstraintLayout>
+
+        <!-- 네비게이션 드로어 -->
+        <LinearLayout
+            android:id="@+id/navigation_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!-- 네비게이션 드로어 내용 추가 -->
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
 </android.support.constraint.ConstraintLayout>
